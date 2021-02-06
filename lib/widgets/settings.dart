@@ -44,7 +44,7 @@ class Settings extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text('Primary Color'),
-                  (model.primaryColor.index != null || model.primaryColor.name != null)
+                  (model.primaryColor.index != null && model.primaryColor.name != null)
                       ? Slider(
                           value: model.primaryColor.index,
                           min: 0.0,
